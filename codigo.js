@@ -371,7 +371,7 @@ animal.comer(); */
 
 /* Método GET/SET (obtener, modificar datos)*/
 //vamos a ver un ejemplo con las clases con las que estamos trabajando:
-class animal{
+/* class animal{
     constructor (especie,edad,color){
         this.especie = especie;
         this.edad    = edad;
@@ -404,4 +404,32 @@ const perro1 = new perro("perro",5,"marrón");
 perro1.setRaza = "caniche";
 
 //Imprimimos por pantalla, vemos que la propiedad RAZA se ha modificado:
-document.write(perro1.getRaza);
+document.write(perro1.getRaza); */
+
+/* *******************************************************
+******************************************************* */
+/* MÉTODOS DE CADENAS */
+// Cuando creamos cadenas de String, lo escribimos así:
+let cadena = "cadena de prueba,"; //el sistema lo trata como un objeto, y lo lee así por detrás: let cadena = new string ("cadena de prueba").
+let cadena2 = " prueba";
+// Veamos algunos ejemplos de métodos de cadenas
+
+//MÉTODO CONCAT(). Junta dos o más cadenas y retorna una nueva
+let concatenacion = cadena.concat(cadena2);
+document.write(`<b>${concatenacion}</b>`);//le hemos incluido etiquetas de HTML5 para que lo escriba en negrita.También valdría sólo la variable (document.write(concatenacion)).
+
+//MÉTODO STARTSWITCH(). Si una cadena comienza con los caracteres de otra cadena, devuelve TRUE; si no, devuelve FALSE
+concatenacion = cadena.startsWith(cadena2);
+document.write(concatenacion);//en este caso, será FALSE, ya que no comienzan igual.
+
+//MÉTODO ENDSWITCH(). Si una cadena TERMINA con los caracteres de otra cadena, devuelve TRUE; si no, devuelve FALSE.
+concatenacion = cadena.endsWith(cadena2);
+document.write(concatenacion);//aquí también será FALSE, ya que no acaban igual
+
+//MÉTODO INCLUDES(). Si una cadena puede encontrarse dentro de otra cadena, devuelve TRUE; en caso contrario devuelve FALSE.
+concatenacion = cadena.includes("cadena de");
+document.write(concatenacion);//en este caso, será TRUE, ya que la cadena CADENA DE se encuentra en las dos cadenas.
+
+//MÉTODO INDEXOF(). (*5.21*)
+
+
